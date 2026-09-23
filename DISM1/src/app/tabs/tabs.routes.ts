@@ -21,6 +21,13 @@ export const routes: Routes = [
         loadComponent: () =>
           import('../tab3/tab3.page').then((m) => m.Tab3Page),
       },
+
+      {
+        path: 'formulario',
+        loadComponent: () =>
+          import('../formulario/formulario.page').then((m) => m.FormularioPage),
+      },
+
       {
         path: '',
         redirectTo: '/tabs/tab1',
