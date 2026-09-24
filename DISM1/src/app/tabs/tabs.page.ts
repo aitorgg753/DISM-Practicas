@@ -1,5 +1,5 @@
 import { Component, EnvironmentInjector, inject } from '@angular/core';
-import { IonTabs, IonTabBar, IonTabButton, IonIcon, IonLabel } from '@ionic/angular';
+import { IonTabs, IonTabBar, IonTabButton, IonIcon, IonLabel, IonList, IonItem } from '@ionic/angular';
 import { addIcons } from 'ionicons';
 import { listOutline, informationCircleOutline, personOutline, documentTextOutline } from 'ionicons/icons';
 
