@@ -13,8 +13,11 @@
       "nombre": "Susana"
     },
     {
-      "id": "4",
-      "nombre": "Hugo"
+      "id": "UuUQb67_F_A",
+      "nombre": "d",
+      "edad": "2",
+      "email": "dddds"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
