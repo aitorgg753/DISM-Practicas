@@ -1,17 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular';
-
+import { IonContent, IonHeader, IonTitle, IonToolbar, IonButtons, IonMenuButton, IonButton } from '@ionic/angular';
+import { Router, RouterLink} from '@angular/router';
 @Component({
   selector: 'app-credits',
   templateUrl: './credits.page.html',
   styleUrls: ['./credits.page.scss'],
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
+  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonButtons, IonMenuButton, IonButton, RouterLink]
 })
 export class CreditsPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) {}
+
+  mostrarPagina() {
+    this.router.navigate(['/home']);
+  }
 
   ngOnInit() {
   }

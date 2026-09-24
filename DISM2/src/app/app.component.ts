@@ -1,11 +1,17 @@
 import { Component } from '@angular/core';
-import { IonApp, IonRouterOutlet, IonSplitPane, IonMenu, IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonMenuToggle, IonItem, IonIcon, IonLabel,  } from '@ionic/angular';
+import { IonIcon,IonApp, IonRouterOutlet, IonItem, IonSplitPane, IonMenu, IonHeader,IonToolbar,IonTitle,IonLabel,IonContent,IonList,IonMenuToggle } from '@ionic/angular';
+import { addIcons } from 'ionicons';
+import { helpCircle,home} from 'ionicons/icons';
 import { RouterModule } from '@angular/router';
+
 @Component({
   selector: 'app-root',
+  standalone: true,
   templateUrl: 'app.component.html',
-  imports: [IonApp, IonRouterOutlet, IonSplitPane, IonMenu, IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonMenuToggle, IonItem, IonIcon, IonLabel, RouterModule],
+  imports: [RouterModule ,IonItem, IonApp, IonRouterOutlet,IonSplitPane,IonMenu,IonHeader,IonToolbar,IonTitle ,IonLabel,IonContent,IonList,IonMenuToggle,IonIcon],
 })
 export class AppComponent {
-  constructor() {}
+  constructor() {
+    addIcons({ helpCircle,home });
+  }
 }
